@@ -1,0 +1,45 @@
+<!doctype html>
+{% extends "Base.html" %}
+{% load static %}
+
+  {% block body_block %}
+
+    <!-- Page Header Start -->
+    <div class="content-fluid bg-dark p-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="display-4 text-white">Contact Us</h1>
+                <a href="{% url 'index' %}">Home</a>
+                <i class="far fa-square text-primary px-2"></i>
+                <a href="{% url 'Eron_app:contact' %}">Contact</a>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- Contact Start -->
+    <div class="container-fluid bg-secondary px-0" style="padding-bottom: 30px;">
+        <div class="row g-0" style="padding-top: 30px;">
+            <div class="col-lg-6 py-6 px-5">
+                <h1 class="display-5 mb-4">Contact For Any Queries</h1>
+                <form  method="POST">
+                    <div class="row g-3">
+                        {{ form.as_p }}
+                         {% csrf_token %}
+                        <div class="col-12">
+                            <button class="btn btn-primary w-100 py-3" type="submit " value="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6" style="min-height: 400px;">
+                <div class="position-relative h-100">
+                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6949743.029139142!2d-89.70677649332225!3d49.44574780879038!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce05b25f5113af%3A0x70f8425629621e09!2sOntario%2C%20Canada!5e0!3m2!1sen!2sng!4v1676030643057!5m2!1sen!2sng" 
+                 width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Contact End -->
+   {% endblock %}

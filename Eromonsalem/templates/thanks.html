@@ -1,0 +1,13 @@
+<!doctype html>
+{% extends "Base.html" %}
+{% load static %}
+
+  {% block body_block %}
+
+  <div class="text-center content-fluid" style="padding-bottom: 30px;">
+    <h1>Thank You !</h1>
+    <h2> We will get in touch with you soon </h2>
+    <a href="{% url 'index' %}"  class="btn btn-primary " >Back Home</a>
+  </div>
+
+  {% endblock %}

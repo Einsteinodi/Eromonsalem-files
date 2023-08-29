@@ -1,0 +1,121 @@
+<!doctype html>
+{% extends "Base.html" %}
+{% load static %}
+
+  {% block body_block %}
+             <!-- Page Header Start -->
+             <div class="content-fluid bg-dark p-5">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-4 text-white">Service Agreement</h1>
+                        <a href="{% url 'index' %}">Home</a>
+                        <i class="far fa-square text-primary px-2"></i>
+                        <a href="{% url 'Eron_app:servicedeal' %}">Service Agreement</a>
+                    </div>
+                </div>
+             </div>
+            <!-- Page Header End -->
+
+            
+            <!-- Service Agreement -->
+            <div class="container-fluid bg-secondary px-0" style="padding-bottom: 100px;">
+                <div class="row g-0" style="padding-top: 30px;">
+                    <div class="">
+                        <h1 class="">Service Level Agreement - Hosting.</h1>
+                        <h5> This Hosting Service Level Agreement (“Agreement”) is a contract between the person or entity using the Companyʼs Services (“Customer”) and Eromonsalemconsulting (“Company”) and applies to Customerʼs use of the Companyʼs Services.
+                            Customer must read, agree with and accept all of the terms and conditions contained in this Agreement.
+                            The Company may amend this Agreement at any time by posting a revised version on its website.</h5>
+                        <div style="text-align: left; padding: 30px;" >
+                            <p>
+                                 <strong><h3> 1. Services:</h3></strong>
+                             </p>
+                             <p>
+                                The purpose of this Agreement, the services to be provided by our Company (“Services”) are those services, 
+                                which Customer requested be supplied by the Company and for which Customer agreed to pay based on Customerʼs 
+                                clicking through the options on the Companyʼs website. 
+                             </p>
+                             <p>
+                                <strong><h3> 2. Scope of Services:</h3></strong>
+                             </p>
+                             <p>
+                                Consultant shall provide IT consulting services to Client as described in Exhibit A (“Services”).
+                                The Services shall be performed in a professional and workmanlike manner consistent with industry standards and shall be subject to the terms and conditions of this Agreement.
+                             </p>
+                             <p>
+                                <strong><h3> 3. Fees:</h3></strong>
+                             </p>
+                             <p>
+                                Client shall pay Consultant the fees set forth in Exhibit A for the Services rendered.
+                                Client shall also reimburse Consultant for any reasonable and necessary expenses incurred by Consultant in connection with the performance of the Services.
+                             </p>
+                             <p>
+                                <strong><h3> 4. Term and Termination:</h3></strong>
+                             </p>
+                             <p>
+                                This Agreement shall commence on the date set forth above and shall continue until the completion of the Services, unless terminated earlier by either party upon thirty (30) days’ written notice.
+                                Either party may terminate this Agreement immediately upon written notice if the other party materially breaches any provision of this Agreement.
+                             </p>
+                             <p>
+                                <strong><h3> 5. Confidentiality:</h3></strong>
+                             </p>
+                             <p>
+                                Consultant shall maintain the confidentiality of all Client information and shall not disclose such information to any third party without Client’s prior written consent.
+                                Consultant shall use Client’s confidential information only for the purpose of performing the Services ,Under the Personal Information Protection and Electronic Documents Act (PIPEDA) Canada.
+                             </p>
+                             <p>
+                                <strong><h3> 6. Ownership of Work Product:</h3></strong>
+                             </p>
+                             <p>
+                                All work product created or developed by Consultant in connection with the Services (“Work Product”) shall be the property of Client.
+                                Consultant hereby assigns to Client all right, title, and interest in and to the Work Product, including without limitation all intellectual property rights therein.
+                             </p>
+                             <p>
+                                <strong><h3> 7. Limitation of Liability:</h3></strong>
+                             </p>
+                             <p>
+                                In no event shall Consultant be liable to Client or any third party for any indirect, special, incidental, or consequential damages arising out of or in connection with the Services or this Agreement, even if Consultant has been advised of the possibility of such damages.
+                                Consultant’s total liability to Client arising out of or in connection with this Agreement shall not exceed the total fees paid by Client to Consultant for the Services.
+                             </p>
+                             <p>
+                                <strong><h3> 8. Governing Law:</h3></strong>
+                               
+                             </p>
+                             <p>
+                                This Agreement shall be governed by and construed in accordance with the laws of the Province of Ontario, Ontario's Freedom of Information and Protection of Privacy Act (FIPPA),Ontario's Electronic Commerce Act. 
+                                Any legal action or proceeding arising out of or in connection with this Agreement shall be brought in the state or federal courts located in Canada.                                
+                             </p>
+                             <p>
+                                <strong><h3> 9. Entire Agreement:</h3></strong>
+                             </p>
+                             <p>
+                                This Agreement constitutes the entire agreement between the parties with respect to the Services and supersedes all prior or contemporaneous agreements, understandings, or communications between the parties, whether written or oral.
+                                This Agreement may not be modified except in writing signed by both parties.
+                             </p>
+                             <p>
+                                <strong><h3> 10. Notices:</h3></strong>
+                             </p>
+                             <p>
+                                Any notice required or permitted under this Agreement shall be in writing and shall be deemed given (a) when delivered in person, (b) when sent by confirmed email, or (c) three (3) days after being sent by registered or certified mail, postage prepaid, return receipt requested, to the parties at the addresses set forth above.
+
+                                IN WITNESS WHEREOF, the parties have executed this Agreement as of the date first above written.<br>
+
+                                [Consultant Name]<br>
+                                By: _______________________________<br>
+                                Name: _____________________________<br>
+                                Title: ______________________________<br>
+
+                                [Client Name]<br>
+                                By: _______________________________<br>
+                                Name: _____________________________<br>
+                                Title: ______________________________<br>
+
+                                Exhibit A: Description of Services and Fees<br>
+
+                                [Insert description of Services and corresponding fees]
+                             </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Service Agreement -->
+    {% endblock %}

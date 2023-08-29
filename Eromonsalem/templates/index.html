@@ -1,0 +1,411 @@
+<!doctype html>
+{% extends "Base.html" %}
+{% load static %}
+
+  {% block body_block %}
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0">
+        <div id="header-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100" src="{% static "images/Eromon-img.jpg" %}" alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h2 class="text-white text-uppercase">Eromon-Salem  Consulting</h2>
+                            <h5 class="display-1 text-white mb-md-4">Challenge Us With Your Problems,We Provide Best Solutions .</h5>
+                            <a href="{% url 'Eron_app:service' %}" class="btn btn-primary py-md-3 px-md-5 me-3 rounded-pill">Get Quote</a>
+                            <a href="{% url 'Eron_app:contact' %}" class="btn btn-secondary py-md-3 px-md-5 rounded-pill">Contact Us</a>
+                        </div>
+                    </div>     
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100" src="{% static "images/Eromon-img3.jpg" %}"  alt="Image">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h2 class="text-white text-uppercase">Sprint Report For Stakeholders</h2>
+                            <h5 class="display-1 text-white mb-md-4">Align expectations and build trust with your stakeholders using a report that guides your sprint review and review.</h5>
+                            <a href="{% url 'Eron_app:service' %}" class="btn btn-primary py-md-3 px-md-5 me-3 rounded-pill">Get Quote</a>
+                            <a href="{% url 'Eron_app:contact' %}" class="btn btn-secondary py-md-3 px-md-5 rounded-pill">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#header-carousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+        <div class="container-fluid  p-0">
+            <div class="row g-0">
+                <div class="col-lg-6 py-6 px-5">
+                    <h1 class="display-5 mb-4 " style="padding-top: 30px;">Welcome To <span class="text-primary">Eromon-salem</span></h1>
+                    <h4 class="text-primary mb-4"> Our company offers a wide range of IT training services to help businesses and individuals develop the skills they need to succeed in today's digital landscape. Our training programs are designed to be flexible and adaptable, to meet the specific needs of our clients.</h4>
+                    <p class="mb-4">Whether you are driven by a need to modernize, gain a competitive advantage, or overcome a frustrating operational blocker, we are able to craft the best solution that will help your business grow. At Eromon-salem, we believe technology can connect people in powerful ways. This is why we give our utmost attention to each client to ensure all aspects of your objectives are accomplished.</p>
+                    <a href="{% url 'Eron_app:service' %}" class="btn btn-primary py-md-3 px-md-5 rounded-pill">Get A Quote</a>
+                </div>
+                <div class="col-lg-6">
+                    <div class="h-100 d-flex flex-column justify-content-center bg-primary p-5">
+                        <div class="d-flex text-white mb-5">
+                            <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-signal fa-2x" aria-hidden="true"></i>
+                            </div>
+                            <div class="ps-4">
+                                <h3>IT Services</h3>
+                                <p class="mb-0">Complete technology solutions for all size businesses,get in contact and let us know about your needs</p>
+                            </div>
+                        </div>
+                        <div class="d-flex text-white mb-5">
+                            <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-chart-line fs-4"></i>
+                            </div>
+                            <div class="ps-4">
+                                <h3>IT Project management</h3>
+                                <p class="mb-0">We offer training on IT project management methodologies such as Agile, Scrum, Waterfall and more, to help teams deliver projects on-time, on-budget, and to the satisfaction of stakeholders.</p>
+                            </div>
+                        </div>
+                        <div class="d-flex text-white">
+                            <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
+                                <i class="fa fa-database fa-2x" aria-hidden="true"></i>
+                            </div>
+                            <div class="ps-4">
+                                <h3>Data Science</h3>
+                                <p class="mb-0">Our data science  programs cover the latest techniques and technologies for data analysis, Excel spreadsheet and are designed to help businesses stay competitive in today's data-driven world.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- Services Start -->
+        <div class="content-fluid pt-6 px-5">
+            <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                <h1 class="display-5 mb-0">What We Offer</h1>
+                <hr class="w-25 mx-auto bg-primary">
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-primary text-center px-5">
+                        <div class="d-flex align-items-center justify-content-center bg-secondary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                        <i class="fa fa-briefcase fa-2x" aria-hidden="true" style="color: #0086bb; "></i>
+                        </div>
+                        <h3 class="mb-3">Business Intelligence</h3>
+                        <p class="mb-0">Big data plays an enormous role in business success. The downpour of information available to a given company is tremendous and how it's acquired depends on the tool used.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-primary text-center px-5">
+                        <div class="d-flex align-items-center justify-content-center bg-secondary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                            <i class="fa fa-window-restore fa-2x" aria-hidden="true" style="color:#0086bb; "></i>
+                        </div>
+                        <h3 class="mb-3">Remote Support</h3>
+                        <p class="mb-0">We offer services remotely all around the world. We help in IT assistance, software repair and other needs.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-primary text-center px-5">
+                        <div class="d-flex align-items-center justify-content-center bg-secondary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                            <i class="fa fa-laptop fa-2x" aria-hidden="true" style="color:#0086bb; "></i>
+                        </div>
+                        <h3 class="mb-3">IT Training</h3>
+                        <p class="mb-0">We offer IT training services that helps individuals and businesses stay current with the latest technologies, improve their productivity, and increase their competitiveness in the marketplace.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-primary text-center px-5">
+                        <div class="d-flex align-items-center justify-content-center bg-secondary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                            <i class="fa fa-terminal fa-2x" aria-hidden="true" style="color: #0086bb;"></i>
+                        </div>
+                        <h3 class="mb-3">Programming and Development</h3>
+                        <p class="mb-0">Our programming and development training programs are designed to help individuals and businesses stay up-to-date with the latest programming languages, frameworks, and development methodologies.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-primary text-center px-5">
+                        <div class="d-flex align-items-center justify-content-center bg-secondary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                            <i class="fa fa-cloud fa-2x" aria-hidden="true" style="color: #0086bb;"></i> 
+                        </div>
+                        <h3 class="mb-3">Cloud computing</h3>
+                        <p class="mb-0">Our training programs cover cloud computing technologies such as AWS, Azure, and GCP, and are designed to help businesses take advantage of the cost-saving and scalability benefits of the cloud.</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="service-item bg-primary text-center px-5">
+                        <div class="d-flex align-items-center justify-content-center bg-secondary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                            <i class="fa fa-code fa-2x" aria-hidden="true" style="color: #0086bb;"></i>
+                        </div>
+                        <h3 class="mb-3">Web Design</h3>
+                        <p class="mb-0">We help businesses create websites that are visually appealing, easy to navigate, and optimized for search engines. With the help of a web design service, businesses can establish an online presence, reach a wider audience, and ultimately increase their revenue.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Services End -->
+
+
+
+
+        <!-- Features Start -->
+        <div class="content-fluid py-6 px-5">
+            <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                <h1 class="display-5 mb-0">Why Choose Us!!!</h1>
+                <hr class="w-25 mx-auto bg-primary">
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="row g-5">
+                        <div class="col-12">
+                            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="fa fa-cubes fs-4 text-white"></i>
+                            </div>
+                            <h3>Best In Industry</h3>
+                            <p class="mb-0 " style="color: black;">Our company is proud to be recognized as one of the best in the technology industry. We have a proven track record of delivering innovative and high-quality products and services that meet the needs of our customers.</p>
+                        </div>
+                        <div class="col-12">
+                            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="fa fa-percent fs-4 text-white"></i>
+                            </div>
+                            <h3>99% Success Rate</h3>
+                            <p class="mb-0" style="color: black;">Our company is proud to have a 99% success rate in the technology industry. This is a testament to the dedication and expertise of our team and the effectiveness of our products and services.</p>
+                        </div>
+                        <div class="col-12">
+                            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="fa fa-award fs-4 text-white"></i>
+                            </div>
+                            <h3>Award Winning</h3>
+                            <p class="mb-0" style="color: black;">Our company is proud to be recognized as an award-winning company in the technology industry. We have received numerous awards and accolades for our innovative products and services, customer satisfaction, and overall performance.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="d-block bg-primary h-100 text-center">
+                        <img class="img-fluid" src="" alt="">
+                        <div class="p-4">
+                            <p class="text-white mb-4">Managing Partner of Project Management /Transformation / Engagement & Change Leader / IT Operations
+                                Strategic and Tactical Planning / IT Operations / Agilest / Internal & External Communications / Change Management / Leadership / Evangelist / Social Media / Subject Matter Expert
+                                An innovator, specializing in leading organizations to achieve business profitability and transforming business departments into cohesive units. Consistently resolves issues and finds solutions during periods of growth, consolidation, and transformation.<br>
+                                - Twenty-Five years+ of leadership experience in Transformation, Communications, and IT across all functions including B2B and B2C. <br>
+                                - Information Technology Strategy Development and Implementation Leading people from team level to department size (up to 200+ employees).<br>
+                                - Recognized problem solver and business partner, Cross-functional relationship expert.<br>
+                                - Technology Leader and Instructor in Global Vendor Management and Partnering, experienced in highly matrixed and off-shore environments.<br>
+                                - Large-scale Client and Project Management Executing and delivering upon key success measurements to attain business results.<br>
+                                - Evangelist & Change Leader - Led a Global Challenge Your Mindset initiative, and taught courses on change management for the Leaders at Theorach Limited and other Organizations.<br>
+                                - Experienced with many Change Management methods and tools and all facets of change: cultural, organizational, and strategic.<br>
+                                - Agile and Communications<br>
+                                - Innovative communications and change leader specializing in creating communication strategies that align with a company’s mission and that resonate with and inspire employees.<br> 
+                        EDUCATION SUMMARY.<br>
+                        - Certificate in Big Data Analytics, York University, Keele Campus, Toronto, ON CANADA.<br>
+                        - Master of Business Administration (MBA) Marketing Management, Lagos State University, Lagos.<br>
+                        - Bachelor of Computer Science (B.Sc.), University of Lagos.<br>
+
+                        PROFESSIONAL CERTIFICATIONS AND <br> AFFILIATION.<br>
+                        - Member, PMI Toronto Chapter <br>
+                        - PMI-ACP Agile Certified Professional<br>
+                        - Professional Scrum Master <br>
+                        - Google Cloud Certified Digital Leader <br>
+                        - Lean Six Sigma Yellow Belt <br>
+                        - ITIL Foundation <br>
+                        TECHNICAL SKILLS WE OFFER.<br>
+                        - Jira and Excel <br> - Microsoft Office <br> - PL / MYSQL <br>  - Python and R Programming  <br> - Sybase Database Administration <br> - C++ . </p>
+                        <a href="http://www.linkedin.com/in/theophilus-aikhuele" class="btn btn-light py-md-3 px-md-5 rounded-pill mb-2">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="row g-5">
+                        <div class="col-12">
+                            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="far fa-smile-beam fs-4 text-white"></i>
+                            </div>
+                            <h3>100% Happy Client</h3>
+                            <p class="mb-0" style="color: black;">At Eromon-salem, we take great pride in our ability to consistently deliver exceptional results for our clients. Our dedication to providing superior service has resulted in a 100% satisfaction rate among our clients.</p>
+                        </div>
+                        <div class="col-12">
+                            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="fa fa-user-tie fs-4 text-white"></i>
+                            </div>
+                            <h3>Professional Advisors</h3>
+                            <p class="mb-0" style="color: black;">Our professional advisors are highly trained and experienced experts in their respective fields. They have a deep understanding of the latest industry trends and best practices, and they are committed to staying up-to-date with the latest developments in their areas of expertise.</p>
+                        </div>
+                        <div class="col-12">
+                            <div class="bg-primary rounded-circle d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
+                                <i class="fa fa-headset fs-4 text-white"></i>
+                            </div>
+                            <h3>24/7 Customer Support</h3>
+                            <p class="mb-0" style="color: black;">We understand the importance of providing our customers with the support they need, when they need it. That's why we offer 24/7 customer support to ensure that our customers can reach us whenever they have a question or concern.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Features Start -->
+
+
+
+
+        <!-- Quote Start -->
+        <div class="content-fluid bg-secondary px-0">
+            <div class="row g-0">
+                <div class="col-lg-6 py-6 px-5">
+                    <h1 class="display-5 mb-4">Request A Free Quote</h1>
+                    <p class="mb-4">We understand that every project is unique and that the cost can vary depending on your specific needs and requirements. That's why we offer free quotes to our potential clients.
+
+                    Our team of experienced professionals will work with you to understand your project requirements and provide you with a detailed quote that outlines the cost of the project and the services that will be included.
+
+                    To request a free quote, simply fill out the form on our website or contact us via phone or email. Our team will be happy to provide you with a quote and answer any questions you may have.
+
+                    When you request a quote, please be prepared to provide us with details about your project, including the scope of work, timelines, and any specific requirements or preferences you may have. The more information you can provide us with, the more accurate the quote will be.</p>
+        
+                    <div class="col-12" style="padding-top: 40px;">
+                        <a href="{% url 'Eron_app:service' %}"  class="btn btn-primary w-100 py-3" type="submit ">Get Quote</a>
+                    </div> 
+            
+                </div>
+                <div class="col-lg-6" style="min-height: 400px;">
+                    <div class="position-relative  h-100">
+                        <img class=" w-100 h-100" src="{% static "images/img-03.jpg" %}"  style="object-fit: ;">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Quote End -->
+
+
+
+        <!-- Team Start -->
+        <div class="content-fluid py-6 px-5">
+            <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                <h1 class="display-5 mb-0">Management Team</h1>
+                <hr class="w-25 mx-auto bg-primary">
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="team-item position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="{% static "images/Team03.png" %}" alt="einst">
+                        <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
+                            <h3 class="text-white">EINSTEIN AIKHUELE</h3>
+                            <p class="text-white text-uppercase mb-0">FULL STACK DEVELOPER / DATABASE ADMIN</p>
+                        </div>
+                    </div>
+                    <div style="padding-top: 20px;">
+                        <a href="https://www.linkedin.com/in/einstein-aikhuele" class="btn btn-primary py-md-3 px-md-3 button"> Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-item position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="{% static "images/team2.JPG" %}"  alt="newt">
+                        <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
+                            <h3 class="text-white">NEWTON AIKHUELE </h3>
+                            <p class="text-white text-uppercase mb-0">GRAPHIC DESIGNER / H.R</p>
+                        </div>
+                    </div>
+                    <div style="padding-top: 20px;">
+                        <a href="https://www.linkedin.com/in/aikhuele-newton-a094bb17b?trk=contact-info" class="btn btn-primary py-md-3 px-md-3 button"> Learn More</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="team-item position-relative overflow-hidden">
+                        <img class="img-fluid w-100" src="{% static "images/TEAM-005.jpg" %}"  alt="theo">
+                        <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
+                            <h3 class="text-white">THEOPHILUS AIKHUELE</h3>
+                            <p class="text-white text-uppercase mb-0">MANAGEMENT CONSULTANT</p>
+                        </div>
+                    </div>
+                    <div style="padding-top: 20px;">
+                        <a href="http://www.linkedin.com/in/theophilus-aikhuele" class="btn btn-primary py-md-3 px-md-3 button"> Learn More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+
+
+
+        <!-- Blog Start -->
+        <div class="content-fluid py-6 px-5" style="padding-bottom: 10px;">
+            <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+                <h1 class="display-5 mb-0">Latest Blog Post</h1>
+                <hr class="w-25 mx-auto bg-primary">
+            </div>
+            <div class="row g-5">
+                <div class="col-lg-4">
+                    <div class="blog-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="{% static "images/img-03.jpg" %}"  alt="blogpic">
+                        </div>
+                        <div class="bg-secondary d-flex">
+                            <div class="flex-shrink-0 d-flex flex-column justify-content-center text-center bg-primary text-white px-4">
+                                <span>01</span>
+                                <h5 class="text-uppercase m-0">Jan</h5>
+                                <span>2025</span>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center py-3 px-4">
+                                <div class="d-flex mb-2">
+                                    <small class="text-uppercase me-3"><i class="bi bi-person me-2"></i>Admin</small>
+                                    <small class="text-uppercase me-3"><i class="bi bi-bookmarks me-2"></i>Web Design</small>
+                                </div>
+                                <a class="h4" href="{% url 'Eron_app:blog' %}">Get the latest on our web design blog</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="{% static "images/testimonial-6-3.jpg" %}"  alt="testimonia">
+                        </div>
+                        <div class="bg-secondary d-flex">
+                            <div class="flex-shrink-0 d-flex flex-column justify-content-center text-center bg-primary text-white px-4">
+                                <span>01</span>
+                                <h5 class="text-uppercase m-0">Jan</h5>
+                                <span>2025</span>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center py-3 px-4">
+                                <div class="d-flex mb-2">
+                                    <small class="text-uppercase me-3"><i class="bi bi-person me-2"></i>Admin</small>
+                                    <small class="text-uppercase me-3"><i class="bi bi-bookmarks me-2"></i> Data Science</small>
+                                </div>
+                                <a class="h4" href="{% url 'Eron_app:blog' %}">Get the latest on our Data science blog</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="blog-item">
+                        <div class="position-relative overflow-hidden">
+                            <img class="img-fluid" src="{% static "images/blog-3.jpg" %}"  alt="blog3">
+                        </div>
+                        <div class="bg-secondary d-flex">
+                            <div class="flex-shrink-0 d-flex flex-column justify-content-center text-center bg-primary text-white px-4">
+                                <span>01</span>
+                                <h5 class="text-uppercase m-0">Jan</h5>
+                                <span>2025</span>
+                            </div>
+                            <div class="d-flex flex-column justify-content-center py-3 px-4">
+                                <div class="d-flex mb-2">
+                                    <small class="text-uppercase me-3"><i class="bi bi-person me-2"></i>Admin</small>
+                                    <small class="text-uppercase me-3"><i class="bi bi-bookmarks me-2"></i>Project Management</small>
+                                </div>
+                                <a class="h4" href="{% url 'Eron_app:blog' %}">Get the latest on our project management blog</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Blog End -->
+    {% endblock %}

@@ -1,0 +1,114 @@
+<!doctype html>
+{% extends "Base.html" %}
+{% load static %}
+
+  {% block body_block %}
+
+    <div class="container-fluid bg-dark p-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="display-4 text-white">Services</h1>
+                <a href="{% url 'index' %}">Home</a>
+                <i class="far fa-square text-primary px-2"></i>
+                <a href="{% url 'Eron_app:service' %}">Services</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Services Start -->
+     <div class="content-fluid pt-6 px-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 mb-0">What We Offer</h1>
+            <hr class="w-25 mx-auto bg-primary">
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-primary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center bg-secondary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                       <i class="fa fa-briefcase fa-2x" aria-hidden="true" style="color: #0086bb; "></i>
+                    </div>
+                    <h3 class="mb-3">Business Intelligence</h3>
+                    <p class="mb-0">Big data plays an enormous role in business success. The downpour of information available to a given company is tremendous and how it's acquired depends on the tool used.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-primary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center bg-secondary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                        <i class="fa fa-window-restore fa-2x" aria-hidden="true" style="color:#0086bb; "></i>
+                    </div>
+                    <h3 class="mb-3">Remote Support</h3>
+                    <p class="mb-0">We offer services remotely all around the world. We help in IT assistance, software repair and other needs.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-primary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center bg-secondary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                        <i class="fa fa-laptop fa-2x" aria-hidden="true" style="color:#0086bb; "></i>
+                    </div>
+                    <h3 class="mb-3">IT Training</h3>
+                    <p class="mb-0">We offer IT training services that helps individuals and businesses stay current with the latest technologies, improve their productivity, and increase their competitiveness in the marketplace.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-primary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center bg-secondary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                        <i class="fa fa-terminal fa-2x" aria-hidden="true" style="color: #0086bb;"></i>
+                    </div>
+                    <h3 class="mb-3">Programming and Development</h3>
+                    <p class="mb-0">Our programming and development training programs are designed to help individuals and businesses stay up-to-date with the latest programming languages, frameworks, and development methodologies.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-primary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center bg-secondary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                        <i class="fa fa-cloud fa-2x" aria-hidden="true" style="color: #0086bb;"></i> 
+                    </div>
+                    <h3 class="mb-3">Cloud computing</h3>
+                    <p class="mb-0">Our training programs cover cloud computing technologies such as AWS, Azure, and GCP, and are designed to help businesses take advantage of the cost-saving and scalability benefits of the cloud.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6">
+                <div class="service-item bg-primary text-center px-5">
+                    <div class="d-flex align-items-center justify-content-center bg-secondary text-white rounded-circle mx-auto mb-4" style="width: 90px; height: 90px;">
+                        <i class="fa fa-code fa-2x" aria-hidden="true" style="color: #0086bb;"></i>
+                    </div>
+                    <h3 class="mb-3">Web Design</h3>
+                    <p class="mb-0">We help businesses create websites that are visually appealing, easy to navigate, and optimized for search engines. With the help of a web design service, businesses can establish an online presence, reach a wider audience, and ultimately increase their revenue.</p>
+                </div>
+            </div>
+        </div>
+     </div>
+    <!-- Services End -->
+    
+    <!-- Quote Start -->
+    <div class="content-fluid bg-secondary px-0">
+        <div class="row g-0">
+            <div class="col-lg-6 py-6 px-5">
+                <h1 class="display-5 mb-4">Request A Free Quote</h1>
+                <p class="mb-4">We understand that every project is unique and that the cost can vary depending on your specific needs and requirements. That's why we offer free quotes to our potential clients.
+
+                Our team of experienced professionals will work with you to understand your project requirements and provide you with a detailed quote that outlines the cost of the project and the services that will be included.
+
+                To request a free quote, simply fill out the form on our website or contact us via phone or email. Our team will be happy to provide you with a quote and answer any questions you may have.
+
+                When you request a quote, please be prepared to provide us with details about your project, including the scope of work, timelines, and any specific requirements or preferences you may have. The more information you can provide us with, the more accurate the quote will be.</p>
+                <form  method="POST">
+                    <div class="row gx-3">
+                        {% csrf_token %}
+                        {{formm.as_p}}
+                        <div class="col-12" style="padding-bottom: 20px;">
+                            <button class="btn btn-primary w-100 py-3" type="submit " value="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="col-lg-6" style="min-height: 400px;">
+                <div class="position-relative  h-100">
+                    <img class=" w-100 h-100" src="{% static "images/img-03.jpg" %}"  style="object-fit: ;">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Quote End -->
+   {% endblock %}
+    

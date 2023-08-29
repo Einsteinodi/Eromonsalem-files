@@ -1,0 +1,101 @@
+<!doctype html>
+{% extends "Base.html" %}
+{% load static %}
+
+  {% block body_block %}
+
+             <!-- Page Header Start -->
+            <div class="content-fluid bg-dark p-5">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-4 text-white">Policy</h1>
+                        <a href="{% url 'index' %}">Home</a>
+                        <i class="far fa-square text-primary px-2"></i>
+                        <a href="{% url 'Eron_app:policy' %}">Policy</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header End -->
+
+
+          <!-- Policy Start -->
+            <div class="container-fluid bg-secondary px-0" style="padding-bottom: 30px;">
+                <div class="row g-0" style="padding-top: 30px;">
+                    <div class="">
+                        <h2 class="display-5 mb-4">Below is an overview of our policies related to<br>
+                        the services we offer.</h2>
+                        <div style="text-align: left; padding: 30px;" >
+                            <p>
+                                 <strong><h3> 1. Confidentiality:</h3></strong>
+                             </p>
+                             <p>
+                                We understand that confidentiality is of utmost importance to our clients. 
+                                Therefore, we have strict policies in place to protect our clients' sensitive information. 
+                                All our employees and contractors are required to sign non-disclosure agreements (NDAs) before working on any projects.
+                                Additionally, we adhere to all applicable laws and regulations regarding data privacy and protection.
+                             </p>
+                             <p>
+                                <strong><h3> 2. Quality Assurance:</h3></strong>
+                             </p>
+                             <p>
+                                We are committed to providing high-quality services to our clients.
+                                Our employees and contractors undergo extensive training and are required to follow standardized processes to ensure consistent quality across all our projects.
+                                We also conduct regular audits to assess the effectiveness of our processes and identify areas for improvement.
+                             </p>
+                             <p>
+                                <strong><h3> 3. Security:</h3></strong>
+                             </p>
+                             <p>
+                                We take the security of our client's data very seriously. 
+                                We use industry-leading security protocols and best practices to ensure that your data is protected at all times. 
+                                Additionally, we work closely with our clients to understand their specific security needs and develop a customized security strategy to address them.
+                             </p>
+                             <p>
+                                <strong><h3> 4. Communication:</h3></strong>
+                             </p>
+                             <p>
+                                We believe that clear communication is essential to the success of any project.
+                                 We assign a dedicated project manager to each client, who serves as the main point of contact throughout the project. 
+                                 We provide regular updates to our clients on the status of their project and encourage open and transparent communication to address any issues or concerns that may arise.
+                             </p>
+                             <p>
+                                <strong><h3> 5. Conflict of Interest:</h3></strong>
+                             </p>
+                             <p>
+                                We are committed to acting in the best interests of our clients at all times.
+                                Therefore, we have strict policies in place to prevent any conflicts of interest. 
+                                We will not accept any projects that could potentially conflict with the interests of our existing clients.
+                                Additionally, our employees and contractors are required to disclose any potential conflicts of interest and recuse themselves from any projects where such conflicts exist.
+                             </p>
+                             <p>
+                                <strong><h3> 6. Intellectual Property:</h3></strong>
+                             </p>
+                             <p>
+                                We respect the intellectual property rights of our clients and are committed to ensuring that they retain full ownership of their proprietary information and technologies. 
+                                Therefore, we include provisions in our contracts that clearly specify the ownership of intellectual property developed during the course of the project.
+                             </p>
+                             <p>
+                                <strong><h3> 7. Compliance:</h3></strong>
+                             </p>
+                             <p>
+                                We are committed to complying with all applicable laws and regulations related to the services we offer. 
+                                We have policies and procedures in place to ensure that we remain in compliance with all relevant laws and regulations,
+                                including data privacy laws, cybersecurity regulations, and industry standards.
+                                We regularly review and update our policies to ensure that they remain current and effective. 
+                                If you have any questions about our policies or would like to request a copy of any of our policies, please contact us.
+                             </p>
+                             <p>
+                                <strong><h3> 8. PRIVACY POLICY FOR SSL-/TLS-ENCRYPTION:</h3></strong>
+                               
+                             </p>
+                             <p>
+                                This website uses SSL/TLS encryption for security reasons and to protect the transmission of confidential content, such as requests that you send to us as the site operator. 
+                                You can recognize an encrypted connection by the fact that the address line of the browser changes from “http://” to “https://” and by the lock symbol in your browser line.
+                                If SSL or TLS encryption is activated, the data you transmit to us cannot be read by third parties.
+                             </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+          <!-- Policy End -->
+    {% endblock %}

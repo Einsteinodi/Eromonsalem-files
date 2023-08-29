@@ -1,0 +1,169 @@
+<!doctype html>
+{% load static %}
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static "CSS/style.css"  %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+     <!-- Icon Font Stylesheet -->
+     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+ 
+    
+  </head>
+  <body>
+
+    <!-- Topbar Start -->
+    <div class="container-fluid ps-5 pe-0 d-none d-lg-block">
+        <div class="row gx-0">
+            <div class="col-md-6  text-lg-start mb-2 mb-lg-0">
+                <div class="d-inline-flex align-items-center">
+                    <a class="text-body py-2 pe-3 border-end" href="{% url 'Eron_app:FQA' %}"><small>FAQs</small></a>
+                    <a class="text-body py-2 px-3 border-end" href="{% url 'Eron_app:servicedeal' %}"><small>Service Level Agreement</small></a>
+                    <a class="text-body py-2 px-3 border-end" href="{% url 'Eron_app:privacy' %}"><small>Privacy</small></a>
+                    <a class="text-body py-2 px-3 border-end" href="{% url 'Eron_app:policy' %}"><small>Policy</small></a>
+                </div>
+            </div>
+            <div class="col-md-6  text-lg-end">
+                <div class="position-relative d-inline-flex align-items-center bg-primary text-white top-shape px-5">
+                    <div class="me-3 pe-3 border-end py-2">
+                        <p class="m-0"><i class="fa fa-envelope-open me-2"></i>Eromonsalemconsulting@gmail.com</p>
+                    </div>
+                    <div class="py-2">
+                        <p class="m-0"><i class="fa fa-phone-alt me-2"></i>+1 647-562-8447</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="nav-bar">
+         <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="{% url 'index' %}"><img src="{% static "images/Eronsalemmm.png" %}" alt="Logo" ></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                  <a class="nav-link "  href="{% url 'index' %}">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{% url 'Eron_app:about' %}">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle " href="{% url 'Eron_app:service' %}"  aria-expanded="false">
+                    Services
+                  </a>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="{% url 'Eron_app:service' %}">Get quotes -Services and<br> more</a></li>
+                    <li><a class="dropdown-item" href="{% url 'Eron_app:contact' %}">Contact Us- Contact Us <br>For more info</a></li>
+                  </ul>
+                  <li class="nav-item">
+                        <a class="nav-link" href="{% url 'Eron_app:blog' %}">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                        <a class="nav-link" href="{% url 'Eron_app:contact' %}">Contact Us</a>
+                  </li>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+    </section>
+    <div>
+     {% block body_block %}
+
+     {% endblock %}
+
+    </div>
+    
+
+    <!-- Footer Start -->
+    <!-- Begin Mailchimp Signup Form -->
+    <style type="text/css">
+        #mc_embed_signup{ font:20px ,Arial,sans-serif;}
+        /* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
+        We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+    </style>
+    <div  class="content-fluid bg-primary  p-5" id="mc_embed_signup">
+        <form class="mx-auto" action="https://gmail.us21.list-manage.com/subscribe/post?u=9ca14176ce698bb3ec6889950&amp;id=40e940b2b7&amp;f_id=004babe1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+            <h1 class="display-5 mb-4">Stay Updated!!!</h1>
+            <div class="mx-auto" style="max-width: 600px;">
+                <label style="color: black;" for="mce-EMAIL">Email Address</label>
+                <input type="email" value="" class="form-control border-white p-2" name="EMAIL" class="required email" id="mce-EMAIL" required>
+                <span id="mce-EMAIL-HELPERTEXT" class="helper_text"></span>
+                <input type="submit" class="btn btn-dark px-4" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button">
+            </div>
+                <div id="mce-responses" class="clear foot">
+                    <div class="response" id="mce-error-response" style="display:none"></div>
+                    <div class="response"  style="color: black;" id="mce-success-response" style="display:none"></div>
+                </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_9ca14176ce698bb3ec6889950_40e940b2b7" tabindex="-1" value=""></div>
+                    <div class="optionalParent">
+                        <div class="clear foot">
+                            
+                        </div>
+                    </div>
+                </div>
+        </form>
+    </div>
+    <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';fnames[3]='ADDRESS';ftypes[3]='address';fnames[4]='PHONE';ftypes[4]='phone';fnames[5]='BIRTHDAY';ftypes[5]='birthday';}(jQuery));var $mcj = jQuery.noConflict(true);</script>
+    <!--End mc_embed_signup-->
+
+
+    <div class="container-fluid bg-dark text-secondary p-5">
+        <div class="row g-5">
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white  mb-4">Quick Links</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-secondary mb-2" href="{% url 'index' %}"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                    <a class="text-secondary mb-2" href="{% url 'Eron_app:about' %}"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                    <a class="text-secondary mb-2" href="{% url 'Eron_app:service' %}"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                    <a class="text-secondary mb-2" href="{% url 'Eron_app:blog' %}"><i class="bi bi-arrow-right text-primary me-2"></i>Blog Post</a>
+                    <a class="text-secondary" href="{% url 'Eron_app:contact' %}"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Popular Links</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-secondary mb-2" href="{% url 'index' %}"><i class="bi bi-arrow-right text-primary me-2"></i>Home</a>
+                    <a class="text-secondary mb-2" href="{% url 'Eron_app:about' %}"><i class="bi bi-arrow-right text-primary me-2"></i>About Us</a>
+                    <a class="text-secondary mb-2" href="{% url 'Eron_app:service' %}"><i class="bi bi-arrow-right text-primary me-2"></i>Our Services</a>
+                    <a class="text-secondary mb-2" href="{% url 'Eron_app:blog' %}"><i class="bi bi-arrow-right text-primary me-2"></i>Blog Post</a>
+                    <a class="text-secondary" href="{% url 'Eron_app:contact' %}"><i class="bi bi-arrow-right text-primary me-2"></i>Contact Us</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Get In Touch</h3>
+                <p class="mb-2"><i class="fa fa-location-arrow" aria-hidden="true" style="color: #fff;"></i>Toronto, CANADA</p>
+                <p class="mb-2"><i class="fa fa-envelope-open me-2" style="color: #fff;"></i> Eromonsalemconsulting@gmail.com</p>
+                <p class="mb-0"><i class="fa fa-phone-alt me-2" style="color: #fff;"></i>+1 647-562-8447</p>
+            </div>
+            <div class="col-lg-3 col-md-6">
+                <h3 class="text-white mb-4">Follow Us</h3>
+                <div>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
+                    <a class="btn btn-lg btn-primary btn-lg-square rounded-circle" href="#"><i class="fab fa-instagram fw-normal"></i></a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="container-fluid bg-dark text-secondary text-center border-top py-4 px-5" style="border-color: rgba(256, 256, 256, .1) !important;">
+        <p class="m-0">&copy; <a class="text-secondary " style="text-decoration: none;" href="{% url 'index' %}">EROMON-SALEM 2023</a>
+    </div>
+    <!-- Footer End -->
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  </body>
+</html>

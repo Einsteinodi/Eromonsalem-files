@@ -1,0 +1,90 @@
+<!doctype html>
+{% extends "Base.html" %}
+{% load static %}
+
+  {% block body_block %}
+
+
+            <!-- Page Header Start -->
+            <div class="content-fluid bg-dark p-5">
+                <div class="row">
+                    <div class="col-12 text-center">
+                        <h1 class="display-4 text-white">FAQs</h1>
+                        <a href="{% url 'index' %}">Home</a>
+                        <i class="far fa-square text-primary px-2"></i>
+                        <a href="{% url 'Eron_app:FQA' %}">FAQs</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Page Header End -->
+
+             <!-- FQA Start -->
+            <div class="container-fluid bg-secondary px-0" style="padding-bottom: 30px;">
+                <div class="row g-0" style="padding-top: 30px;">
+                    <div class="">
+                        <h2 class="display-5 mb-4">Welcome to the Frequently Asked Questions (FAQ) page for Eromonsalemconsulting!</h2>
+                        <p> Q: What services do we offer?<br>
+                            A: Our company offers a range of IT consulting services, including but not limited to:<br>
+                            
+                            <strong>Technology strategy development,
+                            IT infrastructure design and implementation,
+                            Programming and Development,
+                            Web Design,
+                            Business process automation,
+                            Custom software development,
+                            Project management IT staff augmentation.</strong>
+                        </p>
+                        <p>
+                            Q: How do you ensure the security of our company's data?<br>
+                            A: We take the security of our clients' data very seriously.<br>
+                            <strong>We use industry-leading security protocols and best practices to ensure that your data is protected at all times.
+                            Additionally,we work closely with you to understand your specific security needs and develop a customized security strategy to address them.</strong>
+
+                        </p>
+
+
+                        <p>
+                            Q: Can you work with our existing IT staff?<br>
+                            A: Absolutely.<br> 
+                            <strong>We can provide IT staff augmentation services to supplement your 
+                            existing team or work collaboratively with them on projects.</strong>
+
+                        </p>
+                        <p>
+                            Q: How much do your IT consulting services cost?<br>
+                            A: The cost of our IT consulting services varies depending on the scope and complexity of the project.<br>
+                            <strong>We provide custom quotes for each project after conducting a thorough assessment of your needs. 
+                            However, we strive to provide competitive pricing while delivering high-quality services.</strong>
+                            
+                        </p>
+                        <p>
+                            Q: How do I know if I need Eromonsalemconsulting services?<br>
+                            A: If you are experiencing any of the following issues, Our services may be beneficial for your business:<br>
+                            
+                            <strong>Inefficient technology infrastructure or outdated systems.
+                            Security breaches or other cybersecurity concerns.
+                            Difficulty implementing new technologies.
+                            Limited IT staff or expertise.
+                            Inability to keep up with industry trends.</strong>
+                        </p>
+                        <p>
+                            Q: Do you offer ongoing support services?<br>
+                            A: Yes, we offer ongoing support services to ensure that your technology infrastructure continues to meet your business needs.<br>
+                            <strong>We provide various levels of support, ranging from on-call assistance to proactive monitoring and maintenance.</strong>
+                        </p>
+                        <p>
+                            Q: How do I get started with your IT consulting services?<br>
+                            A: The first step is to contact us to schedule a consultation.<br> 
+                            <strong>During the consultation, we will discuss your specific needs and determine how our services can help your business. 
+                            From there, we will provide a custom quote and develop a plan of action to begin the project.</strong>
+                        </p>
+
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- FQAs End -->
+    {% endblock %}
+
+    
+

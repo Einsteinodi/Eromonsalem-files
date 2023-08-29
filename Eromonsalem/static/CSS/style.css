@@ -1,0 +1,342 @@
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+
+body{
+	background: white;
+	text-align: center;
+	font-family:"Open Sans",Arial,sans-serif;
+	padding: 0px;
+	margin: 0px;
+
+}
+
+
+a{
+	text-decoration: none;
+}
+
+
+
+#nav-bar{
+	position: sticky;
+	top: 0;
+	z-index: 10;
+	box-shadow: 0 0 1px black;
+
+}
+
+
+#nav-bar ul li a:hover{
+	color: #bababa ! important;
+
+}
+
+
+
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
+
+
+
+
+.navbar-brand img{
+	height: 85px;
+	padding-left: 40px;
+
+
+}
+
+
+
+.carousel-caption {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(21, 36, 64, .7);
+    z-index: 1;
+}
+
+@media (max-width: 576px) {
+    .carousel-caption h5 {
+        font-size: 14px;
+        font-weight: 500 !important;
+    }
+
+    .carousel-caption h2 {
+        font-size: 30px;
+        font-weight: 600 !important;
+    }
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 10%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    width: 3rem;
+    height: 3rem;
+}
+
+
+.carousel-item {
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    backface-visibility: hidden;
+    transition: transform .6s ease-in-out;
+}
+
+.btn-primary {
+    color: #ffffff ! important;
+    background-color: #0086bb ! important;
+    border-color: #0086bb ! important;
+}
+
+
+
+.bg-secondary {
+    background-color: #fff  !important;
+}
+
+.text-primary {
+    color: #0086bb !important;
+}
+
+.bg-primary{
+	background-color: #0086bb !important;
+}
+
+.navbar-toggler{
+	border: none ! important;
+}
+
+
+.navbar-nav li{
+	padding: 0 10px;
+
+}
+
+
+.navbar{
+	background: #fff;
+}
+
+
+.nav-link{
+	color: grey ;
+	font-weight: 400;
+	font-size: 16px;
+}
+
+
+
+.mush{
+	color: #2AA5F3 ! important;
+
+}
+
+
+.container{
+	padding-top: 35px;
+}
+
+.content-fluid{
+	padding-top: 35px ! important;
+
+}
+
+
+.service-item {
+    position: relative;
+    overflow: hidden;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: .3s;
+}
+
+
+.service-item:hover::after {
+    bottom: -25px;
+}
+
+.service-item p {
+    transition: .3s;
+}
+
+.service-item:hover p {
+    margin-bottom: 25px !important;
+}
+
+.mb-0{
+	color: white;
+}
+
+
+.display-5{
+	color: black;
+}
+
+
+.mini-content{
+	padding: 35px 40px;
+	height: 250px;
+}
+
+.parts{
+	padding: 35px 40px;
+	height: 300px;
+}
+
+.col{
+	height: 500px;
+}
+
+
+
+.team-item img {
+    transform: scale(1.15);
+    margin-left: -30px;
+    transition: .5s;
+}
+.w-100 {
+    width: 100% !important;
+}
+
+
+
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+
+
+
+.img, svg {
+    vertical-align: middle;
+}
+
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+
+
+.blog-item img {
+    transition: .5s;
+}
+
+.blog-item:hover img {
+    transform: scale(1.1);
+}
+
+
+
+user agent stylesheet
+.img {
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+
+
+.g-5, .gy-5 {
+    --bs-gutter-y: 3rem;
+}
+
+
+.g-5, .gx-5 {
+    --bs-gutter-x: 3rem;
+}
+
+.team-item .team-text {
+    left: -100%;
+    transition: .5s;
+}
+
+
+
+.text-center {
+    text-align: center !important;
+}
+
+.p-4 {
+    padding: 1.5rem !important;
+}
+
+
+.w-100 {
+    width: 100% !important;
+}
+
+.top-50 {
+    top: 50% !important;
+}
+
+
+.position-absolute {
+    position: absolute !important;
+}
+
+
+
+
+
+.team-item:hover .team-text {
+    left: 0;
+}
+
+.team-item .team-text {
+    left: -100%;
+    transition: .5s;
+}
+
+
+.text-center {
+    text-align: center !important;
+}
+
+
+.p-4 {
+    padding: 1.5rem !important;
+}
+
+.w-100 {
+    width: 100% !important;
+}
+
+.top-50 {
+    top: 50% !important;
+}
+
+.position-absolute {
+    position: absolute !important;
+}
+
+
+
+
+Theme Name: Divi
+Theme URI: http://www.elegantthemes.com/gallery/divi/
+Version: 3.1.1
+Description: Smart. Flexible. Beautiful. Divi is the most powerful theme in our collection.
+Author: Elegant Themes
+Author URI: http://www.elegantthemes.com
+Tags: responsive-layout, one-column, two-columns, three-columns, four-columns, left-sidebar, right-sidebar, custom-background, custom-colors, featured-images, full-width-template, post-formats, rtl-language-support, theme-options, threaded-comments, translation-ready
+License: GNU General Public License v2
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/a,abbr,acronym,address,applet,b,big,blockquote,body,center,cite,code,dd,del,dfn,div,dl,dt,em,fieldset,font,form,h1,h2,h3,h4,h5,h6,html,i,iframe,img,ins,kbd,label,legend,li,object,ol,p,pre,q,s,samp,small,span,strike,strong,sub,sup,tt,u,ul,var{margin:0;padding:0;border:0;outline:0;background:0 0;font-size:100%;vertical-align:baseline;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:"";content:none}blockquote{margin:20px 0 30px;padding-left:20px;border-left:5px solid}:focus{outline:0}ins{text-decoration:none}del{text-decoration:line-through}table{border-spacing:0;border-collapse:collapse}article,aside,footer,header,hgroup,nav,section{display:block}body{color:#666;background-color:#fff;font-family:"Open Sans",Arial,sans-serif;font-size:14px;font-weight:500;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;line-height:1.7em}body.et_fixed_nav.et_boxed_layout #page-container,body.et_non_fixed_nav.et_transparent_nav.et_boxed_layout #page-container{padding-top:80px}body.page-template-page-template-blank-php #page-container{padding-top:0!important}body.et_cover_background{background-repeat:no-repeat!important;background-attachment:fixed;background-position:top center!important;-webkit-background-size:cover!important;-moz-background-size:cover!important;background-size:cover!important}a{color:#2ea3f2;text-decoration:none}a:hover{text-decoration:none}p{padding-bottom:1em}p:last-of-type{padding-bottom:0}p.et_normal_padding{padding-bottom:1em}strong{font-weight:700}cite,em,i{font-style:italic}code,pre{margin-bottom:10px;font-family:Courier New,monospace}ins{text-decoration:none}sub,sup{position:relative;height:0;line-height:1;vertical-align:baseline}sup{bottom:.8em}sub{top:.3em}dl{margin:0 0 1.5em 0}dl dt{font-weight:700}dd{margin-left:1.5em}blockquote p{padding-bottom:0}embed,iframe,object,video{max-width:100%}h1,h2,h3,h4,h5,h6{padding-bottom:10px;color:#333;font-weight:500;line-height:1em}h1 a,h2 a,h3 a,h4 a,h5 a,h6 a{color:inherit}h1{font-size:30px}h2{font-size:26px}h3{font-size:22px}h4{font-size:18px}h5{font-size:16px}h6{font-size:14px}input{-webkit-appearance:none}input[type=checkbox]{-webkit-appearance:checkbox}input[type=radio]{-webkit-appearance:radio}input.text,input.title,input[type=email],input[type=password],input[type=tel],input[type=text],select,textarea{padding:2px;border:1px solid #bbb;color:#4e4e4e;background-color:#fff}input.text:focus,input.title:focus,input[type=text]:focus,select:focus,textarea:focus{border-color:#2d3940;color:#3e3e3e}input.text,input.title,input[type=text],select,textarea{margin:0}textarea{padding:4px}img{max-width:100%;height:auto}#ie8 img{width:auto}.clear{clear:both}br.clear{margin:0;padding:0}.et_vertical_nav #page-container:after{display:block;visibility:hidden;clear:both;height:0;font-size:0;content:" "}#et-secondary-menu li,#top-menu li{word-wrap:break-word}.woocommerce .woocommerce-error,.woocommerce .woocommerce-info,.woocommerce .woocommerce-message{background:#2ea3f2}#et_search_icon:hover,#top-menu li.current-menu-ancestor>a,#top-menu li.current-menu-item>a,.bottom-nav li.current-menu-item>a,.comment-reply-link,.entry-summary p.price ins,.et-social-icon a:hover,.et_password_protected_form .et_submit_button,.footer-widget h4,.form-submit .et_pb_button,.mobile_menu_bar:after,.mobile_menu_bar:before,.nav-single a,.posted_in a,.woocommerce #content div.product p.price,.woocommerce #content div.product span.price,.woocommerce #content input.button,.woocommerce #content input.button.alt,.woocommerce #content input.button.alt:hover,.woocommerce #content input.button:hover,.woocommerce #respond input#submit,.woocommerce #respond input#submit.alt,.woocommerce #respond input#submit.alt:hover,.woocommerce #respond input#submit:hover,.woocommerce .star-rating span:before,.woocommerce a.button,.woocommerce a.button.alt,.woocommerce a.button.alt:hover,.woocommerce a.button:hover,.woocommerce button.button,.woocommerce button.button.alt,.woocommerce button.button.alt:hover,.woocommerce div.product p.price,.woocommerce div.product span.price,.woocommerce input.button,.woocommerce input.button.alt,.woocommerce input.button.alt:hover,.woocommerce input.button:hover,.woocommerce-page #content div.product p.price,.woocommerce-page #content div.product span.price,.woocommerce-page #content input.button,.woocommerce-page #content input.button.alt,.woocommerce-page #content input.button.alt:hover,.woocommerce-page #respond input#submit,.woocommerce-page #respond input#submit.alt,.woocommerce-page #respond input#submit.alt:hover,.woocommerce-page #respond input#submit:hover,.woocommerce-page .star-rating span:before,.woocommerce-page a.button,.woocommerce-page a.button.alt,.woocommerce-page a.button.alt:hover,.woocommerce-page a.button:hover,.woocommerce-page button.button,.woocommerce-page button.button.alt,.woocommerce-page button.button.alt:hover,.woocommerce-page button.button:hover,.woocommerce-page div.product p.price,.woocommerce-page div.product span.price,.woocommerce-page input.button,.woocommerce-page input.button.alt,.woocommerce-page input.button.alt:hover,.woocommerce-page input.button:hover,.wp-pagenavi a:hover,.wp-pagenavi span.current{color:#2ea3f2}.et-search-form,.et_mobile_menu,.footer-widget li:before,.nav li ul,blockquote{border-color:#2ea3f2}#et-secondary-nav li ul,#top-header{background-color:#2ea3f2}#main-content{background-color:#fff}#main-header{-webkit-transition:background-color .4s,color .4s,transform .4s,opacity .4s ease-in-out;-moz-transition:background-color .4s,color .4s,transform .4s,opacity .4s ease-in-out;transition:background-color .4s,color .4s,transform .4s,opacity .4s ease-in-out}.container{position:relative;width:80%;max-width:1080px;margin:auto}#main-content .container{padding-top:58px}.et_full_width_page #main-content .

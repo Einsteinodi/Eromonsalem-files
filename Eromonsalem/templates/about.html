@@ -1,0 +1,112 @@
+<!doctype html>
+{% extends "Base.html" %}
+{% load static %}
+
+  {% block body_block %}
+
+    <!-- Page Header Start -->
+    <div class="container-fluid bg-dark p-5">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="display-4 text-white">About Us</h1>
+                <a href="{% url 'index'%}">Home</a>
+                <i class="far fa-square text-primary px-2"></i>
+                <a href="{% url 'Eron_app:about' %}">About</a>
+            </div>
+        </div>
+    </div>
+    <!-- Page Header End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid  p-0">
+        <div class="row g-0">
+            <div class="col-lg-6 py-6 px-5">
+                <h1 class="display-5 mb-4 " style="padding-top: 30px;">Welcome To <span class="text-primary">Eromon-salem</span></h1>
+                <h4 class="text-primary mb-4"> Our company offers a wide range of IT training services to help businesses and individuals develop the skills they need to succeed in today's digital landscape. Our training programs are designed to be flexible and adaptable, to meet the specific needs of our clients.</h4>
+                <p class="mb-4">Whether you are driven by a need to modernize, gain a competitive advantage, or overcome a frustrating operational blocker, we are able to craft the best solution that will help your business grow. At Eromon-salem, we believe technology can connect people in powerful ways. This is why we give our utmost attention to each client to ensure all aspects of your objectives are accomplished.</p>
+                <a href="{% url 'Eron_app:service' %}" class="btn btn-primary py-md-3 px-md-5 rounded-pill">Get A Quote</a>
+            </div>
+            <div class="col-lg-6">
+                <div class="h-100 d-flex flex-column justify-content-center bg-primary p-5">
+                    <div class="d-flex text-white mb-5">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
+                            <i class="fa fa-signal fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h3>IT Services</h3>
+                            <p class="mb-0">Complete technology solutions for all size businesses,get in contact and let us know about your needs</p>
+                        </div>
+                    </div>
+                    <div class="d-flex text-white mb-5">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
+                            <i class="fa fa-chart-line fs-4"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h3>IT Project management</h3>
+                            <p class="mb-0">We offer training on IT project management methodologies such as Agile, Scrum, Waterfall and more, to help teams deliver projects on-time, on-budget, and to the satisfaction of stakeholders.</p>
+                        </div>
+                    </div>
+                    <div class="d-flex text-white">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-white text-primary rounded-circle mx-auto mb-4" style="width: 60px; height: 60px;">
+                            <i class="fa fa-database fa-2x" aria-hidden="true"></i>
+                        </div>
+                        <div class="ps-4">
+                            <h3>Data Science</h3>
+                            <p class="mb-0">Our data science  programs cover the latest techniques and technologies for data analysis, Excel spreadsheet and are designed to help businesses stay competitive in today's data-driven world.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Team Start -->
+    <div class="content-fluid py-6 px-5">
+        <div class="text-center mx-auto mb-5" style="max-width: 600px;">
+            <h1 class="display-5 mb-0">Management Team</h1>
+            <hr class="w-25 mx-auto bg-primary">
+        </div>
+        <div class="row g-5">
+            <div class="col-lg-4">
+                <div class="team-item position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="{% static "images/Team03.png" %}" alt="einst">
+                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
+                        <h3 class="text-white">EINSTEIN AIKHUELE</h3>
+                        <p class="text-white text-uppercase mb-0">FULL STACK DEVELOPER / DATABASE ADMIN</p>
+                    </div>
+                </div>
+                <div style="padding-top: 10px;">
+                    <a href="https://www.linkedin.com/in/einstein-aikhuele" class="btn btn-primary py-md-3 px-md-3 button"> Learn More</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-item position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="{% static "images/team2.JPG" %}"  alt="newt">
+                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
+                        <h3 class="text-white">NEWTON AIKHUELE </h3>
+                        <p class="text-white text-uppercase mb-0">GRAPHIC DESIGNER / H.R</p>
+                    </div>
+                </div>
+                <div style="padding-top: 20px;">
+                    <a href="https://www.linkedin.com/in/aikhuele-newton-a094bb17b?trk=contact-info" class="btn btn-primary py-md-3 px-md-3 button"> Learn More</a>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="team-item position-relative overflow-hidden">
+                    <img class="img-fluid w-100" src="{% static "images/TEAM-005.jpg" %}"  alt="theo">
+                    <div class="team-text w-100 position-absolute top-50 text-center bg-primary p-4">
+                        <h3 class="text-white">THEOPHILUS AIKHUELE</h3>
+                        <p class="text-white text-uppercase mb-0">MANAGEMENT CONSULTANT</p>
+                    </div>
+                </div>
+                <div style="padding-top: 20px;">
+                    <a href="http://www.linkedin.com/in/theophilus-aikhuele" class="btn btn-primary py-md-3 px-md-3 button"> Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Team End -->
+   {% endblock %}
